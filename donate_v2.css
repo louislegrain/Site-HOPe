@@ -1,0 +1,208 @@
+@keyframes load {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.payment-container {
+	position: relative;
+	display: none;
+	margin-bottom: 0;
+}
+
+.payment-container > * {
+	margin: 25px 0;
+}
+
+#loader-container {
+	position: absolute;
+	top: 0;
+	right: -5px;
+	bottom: 0;
+	left: -5px;
+	background-color: rgba(255, 255, 255, .8);
+	justify-content: center;
+	align-items: center;
+	z-index: 14999;
+	display: none;
+}
+
+.loader {
+	width: 80px;
+	height: 80px;
+	border: 8px solid #7f7fff;
+	border-top-color: blue;
+	border-radius: 50%;
+	animation: load 800ms linear infinite;
+}
+
+.container {
+	text-align: center;
+	z-index: 2;
+}
+
+.container > * {
+	margin-bottom: 25px;
+}
+
+.container > *:first-child {
+	margin-top: 0;
+}
+
+#validate {
+	margin-top: 15px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+label:not([for=hamburger-btn]) {
+	color: white;
+	font-weight: 500;
+	padding: 5px 10px;
+	margin-left: 6px;
+	margin-right: 6px;
+	background-color: blue;
+	border: blue solid 4px;
+	border-radius: 10px;
+	cursor: pointer;
+	display: inline-block;
+	transition: color 350ms, background-color 350ms;
+}
+
+input:checked + label:not([for=hamburger-btn]) {
+	color: blue;
+	background-color: white;
+}
+
+p {
+	text-align: left;
+}
+
+.both-container {
+	display: inline;
+}
+
+.other-amount-field-container {
+	height: 0px;
+	width: 115px;
+	margin: 0 auto;
+	border: solid 4px rgba(0, 0, 255, 0);
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+	transition: height 300ms, border 300ms;
+}
+
+#other-amount-field {
+	color: blue;
+	position: absolute;
+	top: -4px;
+	right: -16px;
+	height: 47px;
+	width: 100px;
+	background-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	border: none;
+}
+
+::placeholder {
+	opacity: .4;
+	color: blue;
+}
+
+#other-amount:checked ~ .other-amount-field-big-container .other-amount-field-container {
+	height: 47px;
+	border: solid 4px blue;
+}
+
+#cancel {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	display: none;
+}
+
+.big-container ul {
+	list-style-type: disc;
+	text-align: left;
+}
+
+.big-container ul li {
+	margin-left: 25px;
+}
+
+#payer {
+	padding-top: 80px;
+	margin-top: -80px;
+}
+
+.border {
+	border: 2px solid black;
+	padding: 0px 5px;
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+.smaller-text {
+	font-size: 18px;
+	text-align: center;
+}
+
+@media screen and (max-width: 630px) {
+	label:not([for=hamburger-btn]) {
+		display: block;
+		font-size: 19px;
+	}
+	.container > * {
+		margin-bottom: 15px;
+	}
+	.both-container {
+		display: flex;
+	}
+	label[for="other-amount"] {
+		flex-grow: 1;
+	}
+	.other-amount-field-container {
+		height: 41px !important;
+		width: 0px;
+		border-style: solid;
+		border-width: 0px;
+		border-color: rgba(0, 0, 255, 0);
+		transition: width 300ms, border-color 300ms, border-width 0s 300ms;
+	}
+	#other-amount-field {
+		height: 41px;
+	}
+	#other-amount:checked ~ .other-amount-field-big-container .other-amount-field-container {
+		width: 100px;
+		margin-right: 6px;
+		border-width: 4px;
+		border-color: blue;
+		transition: width 300ms, border-color 300ms, border-width 0s 0ms;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.big-container {
+		font-size: 18px;
+	}
+	.smaller-text {
+		font-size: 12px;
+	}
+	.p-title {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	#payer {
+		padding-top: 20px;
+		margin-top: -20px;
+	}
+}

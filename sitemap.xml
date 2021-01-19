@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>https://hopemediasolidaire.fr/</loc>
+  <priority>1</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-08</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/notre-histoire/</loc>
+  <priority>0.6</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-08</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/team-hope/</loc>
+  <priority>0.6</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-08</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/secrets-de-champions/</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-01-18</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/coulisses/</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-12-08</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/actions-solidaires/</loc>
+  <priority>0.6</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-14</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/blog/</loc>
+  <priority>0.6</priority>
+  <changefreq>weekly</changefreq>
+  <lastmod>2021-01-17</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/presse/</loc>
+  <priority>0.6</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2020-12-08</lastmod>
+</url>
+<url>
+  <loc>https://hopemediasolidaire.fr/partenaires/</loc>
+  <priority>0.6</priority>
+  <changefreq>yearly</changefreq>
+  <lastmod>2020-12-08</lastmod>
+</url>
+</urlset>
