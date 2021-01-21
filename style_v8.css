@@ -504,7 +504,7 @@ a img {
 
 .flex-container > div {
 	width: 25%;
-	margin: 0 4.1%;
+	margin: 10px 4.1%;
 	text-align: center;
 	display: flex;
 	align-items: center;
