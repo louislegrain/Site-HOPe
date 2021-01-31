@@ -665,6 +665,21 @@ a img {
 	margin-top: -70px;
 }
 
+.image-grid {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	margin: 0;
+}
+
+.image-grid img {
+	width: 30%;
+	max-width: 250px;
+	margin: 10px 0;
+}
+
 @media screen and (max-width: 1000px) {
 	.flex-container {
 		justify-content: center;
@@ -775,6 +790,10 @@ a img {
 	.thematic-container h3 {
 		text-align: center;
 	}
+	.image-grid img {
+		width: 45%;
+		max-width: 200px;
+	}
 }
 
 /* ---------- Footer ---------- */
@@ -805,5 +824,15 @@ footer .social li {
 	}
 	footer .social li {
 		padding: 0 4px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.image-grid {
+		justify-content: center;
+	}
+	.image-grid img {
+		width: 85%;
+		max-width: none;
 	}
 }
