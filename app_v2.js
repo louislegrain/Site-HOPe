@@ -25,7 +25,7 @@ window.addEventListener('resize', function () {
 			bigContainer.style.marginTop = '0px';
 		} else {
 			header.style.position = 'fixed';
-			header.style.transform = 'translateY(-' + divHeaderHeight + 'px)';
+			header.style.transform = `translateY(-${divHeaderHeight}px)`;
 			bigContainer.style.marginTop = '247px';
 		}
 	}
@@ -39,14 +39,14 @@ document.addEventListener('scroll', function () {
 			bigContainer.style.marginTop = '0px';
 		} else {
 			header.style.position = 'fixed';
-			header.style.transform = 'translateY(-' + divHeaderHeight + 'px)';
+			header.style.transform = `translateY(-${divHeaderHeight}px)`;
 			bigContainer.style.marginTop = '247px';
 		}
 	} else {
 		let currentScroll = scrollY;
 		if (currentScroll > header.offsetHeight && !document.getElementById('hamburger-btn').checked) {
 			if (currentScroll > initialScroll) {
-				header.style.transform = 'translateY(-' + (header.offsetHeight + 20) + 'px)';
+				header.style.transform = `translateY(-${header.offsetHeight + 20}px)`;
 			} else {
 				header.style.transform = 'translateY(0px)';
 			}
@@ -62,7 +62,7 @@ for (let li of lisNavbar) {
 		if (underlineMinWidth > underlineWidth) {
 			underlineWidth = underlineMinWidth;
 		}
-		underline.style.width = underlineWidth + 'px';
-		underline.style.marginLeft = li.offsetLeft + ((li.offsetWidth - underlineWidth) / 2) + 'px';
+		underline.style.width = `${underlineWidth}px`;
+		underline.style.marginLeft = `${li.offsetLeft + ((li.offsetWidth - underlineWidth) / 2)}px`;
 	});
 }
