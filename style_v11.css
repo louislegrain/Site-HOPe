@@ -294,7 +294,8 @@ header .social li {
 	width: 0px;
 	background-color: #3e3e3e;
 	opacity: 0;
-	transition: margin-left 500ms, width 500ms, min-width 500ms, opacity 500ms;
+	position: relative;
+	transition: left .5s, width .5s, opacity .5s;
 }
 
 .nav-btn {

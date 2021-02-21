@@ -1,7 +1,7 @@
 var mobile = false;
 const header = document.querySelector('header');
 const divHeader = document.getElementById('div-header');
-let divHeaderHeight = divHeader.offsetHeight;
+let divHeaderHeight = 193;
 const bigContainer = document.querySelector('.big-container');
 var initialScroll = scrollY;
 const lisNavbar = document.getElementById('navbar').querySelectorAll('li');
@@ -57,12 +57,10 @@ document.addEventListener('scroll', function () {
 
 for (let li of lisNavbar) {
 	li.addEventListener('mouseenter', function () {
-		var underlineWidth = li.offsetWidth - 80;
-		let underlineMinWidth = li.querySelector('a').querySelector('span').offsetWidth;
-		if (underlineMinWidth > underlineWidth) {
-			underlineWidth = underlineMinWidth;
-		}
+		let underlineMaxWidth = li.offsetWidth - 80;
+		let underlineMinWidth = li.querySelector('a span').offsetWidth;
+		let underlineWidth = underlineMinWidth > underlineMaxWidth ? underlineMinWidth : underlineMaxWidth;
 		underline.style.width = `${underlineWidth}px`;
-		underline.style.marginLeft = `${li.offsetLeft + ((li.offsetWidth - underlineWidth) / 2)}px`;
+		underline.style.left = `${li.offsetLeft + ((li.offsetWidth - underlineWidth) / 2)}px`;
 	});
 }
