@@ -64,3 +64,24 @@ for (let choice of choices) {
 		cancelError.style.display = 'none';
 	};
 }
+
+const svg = document.querySelector('.svg');
+const paths = svg.querySelectorAll('g');
+const popup = document.querySelector('.popup');
+const popupH3 = popup.querySelector('h3');
+const popupP = popup.querySelector('p');
+
+paths.forEach((path) => {
+	path.addEventListener('mouseenter', () => {
+		popupH3.textContent = path.dataset.title;
+		popupP.textContent = `${path.dataset.number}%`;
+		popup.style.display = 'block';
+	});
+	path.addEventListener('mousemove', (e) => {
+		popup.style.top = `${e.clientY - svg.getBoundingClientRect().top}px`;
+		popup.style.left = `${e.clientX - svg.getBoundingClientRect().left}px`;
+	});
+	path.addEventListener('mouseleave', () => {
+		popup.style.display = 'none';
+	});
+});
