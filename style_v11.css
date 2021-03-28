@@ -417,7 +417,7 @@ a img {
 }
 
 .float-container h2 {
-	margin-bottom: 20px;
+	margin: 20px 0;
 	text-align: left;
 }
 
@@ -495,6 +495,7 @@ a img {
 
 .smaller-ul {
 	font-size: 20.4px;
+	margin: 12px 0;
 }
 
 .flex-container {
@@ -672,7 +673,7 @@ a img {
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
-	margin: 0 0 30px 0;
+	margin: 0 0 15px 0;
 }
 
 .image-grid img {
