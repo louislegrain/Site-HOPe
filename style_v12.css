@@ -456,6 +456,7 @@ a img {
 	position: relative;
 	width: 80%;
 	padding-bottom: 45%;
+	margin: 0 auto;
 }
 
 .iframe-container iframe, .iframe-container img {
