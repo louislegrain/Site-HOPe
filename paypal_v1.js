@@ -30,10 +30,6 @@ function initPayPalButton() {
 
     onCancel: function(data, actions) {
       document.getElementById('cancel').style.display = 'block';
-    },
-
-    onError: function(err) {
-      console.log(err);
     }
   }).render('#paypal-button-container');
 }
