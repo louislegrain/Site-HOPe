@@ -83,6 +83,10 @@ p {
 	text-align: left;
 }
 
+p a {
+	color: #f5a081;
+}
+
 .both-container {
 	display: inline;
 }
