@@ -158,46 +158,6 @@ p a {
 	text-align: center;
 }
 
-.svg {
-	position: relative;
-}
-
-.svg g {
-	cursor: none;
-}
-
-.popup {
-	font-size: 16px;
-	display: none;
-	position: absolute;
-	pointer-events: none;
-	background-color: white;
-	padding: 6px 20px;
-	border-radius: 8px;
-	margin-right: 5px;
-}
-
-.popup::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 10px;
-	width: 10px;
-	border-top: solid 3px black;
-	border-left: solid 3px black;
-}
-
-.popup p {
-	font-size: .9em;
-}
-
-@media screen and (max-width: 500px) {
-	.popup {
-		font-size: 10px;
-	}
-}
-
 @media screen and (max-width: 630px) {
 	label:not([for=hamburger-btn]) {
 		display: block;
