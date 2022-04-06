@@ -377,9 +377,6 @@ header .social li {
 	.img-summary a > span {
 		display: none;
 	}
-	.img-summary li {
-		height: auto !important;
-	}
 }
 
 /* ---------- Body ---------- */
@@ -617,24 +614,17 @@ a img {
 
 .img-summary {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 20px 0;
 	margin: 15px 0 40px 0;
 	z-index: 2;
 }
 
-.img-summary li {
-	width: 9vw;
-	height: calc(7.65vw + 40px);
-	margin: 10px 0;
-}
-
 .img-summary a {
-	height: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
 	text-decoration: none;
 	color: black;
 	font-size: 13px;
@@ -646,6 +636,10 @@ a img {
 	border-radius: 50%;
 	width: 85%;
 	flex-shrink: 0;
+}
+
+.img-summary a > span {
+	margin-top: 6px;
 }
 
 .thematic-container h3 {
@@ -753,11 +747,7 @@ a img {
 		font-size: 22px;
 	}
 	.img-summary {
-		flex-wrap: wrap;
-	}
-	.img-summary li {
-		width: 15vw;
-		margin: 10px;
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
 
@@ -781,9 +771,8 @@ a img {
 	.date {
 		font-size: 20px;
 	}
-	.img-summary li {
-		width: 18vw;
-		margin: 10px 0;
+	.img-summary {
+		grid-template-columns: repeat(3, 1fr);
 	}
 	.summary ul a {
 		font-size: 20px;
