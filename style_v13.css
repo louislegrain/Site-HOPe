@@ -615,7 +615,7 @@ a img {
 .img-summary {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(7, 1fr);
+	grid-template-columns: repeat(8, 1fr);
 	gap: 20px 0;
 	margin: 15px 0 40px 0;
 	z-index: 2;
@@ -747,7 +747,7 @@ a img {
 		font-size: 22px;
 	}
 	.img-summary {
-		grid-template-columns: repeat(4, 1fr);
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
 
@@ -772,7 +772,7 @@ a img {
 		font-size: 20px;
 	}
 	.img-summary {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
 	.summary ul a {
 		font-size: 20px;
