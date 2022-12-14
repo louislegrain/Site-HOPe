@@ -774,7 +774,7 @@ a img {
 	.img-summary {
 		grid-template-columns: repeat(4, 1fr);
 	}
-	.summary ul a {
+	.summary ul {
 		font-size: 20px;
 	}
 }
