@@ -452,7 +452,7 @@ a img {
 
 .iframe-container {
 	position: relative;
-	width: 80%;
+	width: 90%;
 	padding-bottom: 45%;
 	margin: 0 auto;
 }
@@ -463,6 +463,33 @@ a img {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+.iframe-container-double {
+	position: relative;
+	width: 100%;
+	padding-bottom: 0;
+	margin: 0 auto;
+}
+.iframe-container-double .iframe-container{
+	margin-bottom: 20px;
+}
+@media only screen and (min-width: 601px) {
+	.iframe-container-double {
+		position: relative;
+		width: 90%;
+		padding-bottom: 0;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	.iframe-container-double .iframe-container{
+		width: 48%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-bottom: 40%;
+
+	}
 }
 
 .smaller-video {
@@ -615,7 +642,7 @@ a img {
 .img-summary {
 	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(8, 1fr);
+	grid-template-columns: repeat(7, 1fr);
 	gap: 20px 0;
 	margin: 15px 0 40px 0;
 	z-index: 2;
@@ -678,6 +705,24 @@ a img {
 	margin: 10px 0;
 }
 
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.image-container img{
+	max-width: 100%;
+}
+.image-container .overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23FFFFFF%22%3E%3Cpath%20d%3D%22M4.021%2010.688c1.208.172%202.51%201.312%202.979%201.781v-10.514c0-1.08.92-1.955%202-1.955s2%20.875%202%201.955v6.058c0%20.784.814.885.919.103.216-1.604%202.519-1.817%202.693.399.043.546.726.655.866.027.326-1.444%202.501-1.458%202.758.758.066.579.796.696.848.034.051-.67.281-.934.607-.934%201.098%200%202.309%202.019%202.309%204.41%200%204.295-3%204.306-3%2011.19h-10c-.332-3.942-3.462-7.431-6.271-10.241-.488-.488-.729-1.052-.729-1.564%200-.93.759-1.688%202.021-1.507z%22%2F%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 @media screen and (max-width: 1000px) {
 	.flex-container {
 		justify-content: center;
@@ -827,5 +872,120 @@ footer .social li {
 	.image-grid img {
 		width: 85%;
 		max-width: none;
+	}
+}
+
+.float-container.bubble-container {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -10px;
+}
+.float-container.bubble-container.float-3-4 {
+	width: 75%;
+}
+.float-container .bubble-box {
+	position: relative;
+	padding: 50px 10px;
+	background-color: #f0f0f0;
+	border-radius: 75px;
+	width: 30%;
+	text-align: center;
+	margin: 20px 10px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.float-container.bubble-container.float-3-4 .bubble-box{
+	padding: 30px 10px;
+}
+
+.float-container .bubble-box.yellow {
+	background: #F7DE37;
+}
+.float-container .bubble-box.blue {
+	background: #33A0C9;
+}
+.float-container .bubble-box.green {
+	background: #247A46;
+}
+.float-container .bubble-box.red {
+	background: #d50920;
+}
+.float-container .bubble-box p{
+	text-align: center;
+}
+a.bubble-box{
+	text-decoration: none;
+	color: #0A0A0A;
+}
+@media only screen and (max-width: 1280px) {
+	.float-container.bubble-container.float-3-4 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.float-container.bubble-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.float-container .bubble-box {
+		width: 80%; /* Adjust width as needed */
+		margin: 5px 0; /* Adjust margin as needed */
+	}
+}
+
+.float-container.grid {
+	display: flex;
+	justify-content: space-between;
+}
+.float-container.grid img.width-25{
+	width: 24%;
+	margin:0;
+}
+.bleu,
+strong.paris-2024 {
+	color: #33A0C9
+}
+.pressevig {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+}
+.pressevig img{
+	max-width: 150px;
+	max-height: 50px;
+	width: auto;
+	height: auto;
+}
+.two-img-col {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70%;
+}
+.two-img-col img{
+	max-width: 48%;
+	width: auto;
+	height: auto;
+	max-height: 700px;
+}
+
+@media only screen and (max-width: 600px) {
+	.pressevig{
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.pressevig img{
+		margin-bottom: 15px;
+	}
+	.two-img-col {
+		width: 100%;
 	}
 }

@@ -1,5 +1,12 @@
 RewriteEngine On
+
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ecoles/ /actions/ [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^blog/ / [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^secrets-de-champions/ / [R=301,L]
+
 RewriteRule ^([^/]+)/$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
 RewriteCond %{REQUEST_FILENAME} !-f
